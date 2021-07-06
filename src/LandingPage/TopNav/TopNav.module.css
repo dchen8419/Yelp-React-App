@@ -11,6 +11,9 @@
 
 .left > * {
     margin-right: var(--element-spacing);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .right {
     display: flex;
