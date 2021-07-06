@@ -8,11 +8,15 @@ import { useBusinessSearch } from '../hooks/yelp-api/useBusinessSearch';
 
 export function Search() {
 
-    const {location} = useReactRouter();
+    const {location, history} = useReactRouter();
     const params = new URLSearchParams(location.search);
     const term = params.get('find_desc') //find in URL string
     const locationParam = params.get('find_loc') //found in URL string 
     const [businesses, amountResults, searchParams, performSearch] = useBusinessSearch(term, locationParam);
+
+    if (!term || !locationParam) {
+        history.push('/');
+    } //Redirect back to homepaage. Checking for truethy and falsy 
 
     function search(term, location) {
         console.log('I am called')
