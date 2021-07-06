@@ -6,6 +6,7 @@ export function SearchResultSummary (props) {
     if (props.amountResults && props.shownResults) {
         resultStats = <p> Showing 1-{props.shownResults} out of {props.amountResults} results</p>
     }
+    
     return (
         <div className={styles.container}>
             <div className={styles['search-summary']}>
@@ -19,7 +20,7 @@ export function SearchResultSummary (props) {
                     </span>
                     <span>All Filters</span>
                 </button>
-                <div class="buttons has-addons">
+                <div className="buttons has-addons">
                     <button className="button">$</button>
                     <button className="button">$$</button>
                     <button className="button">$$$</button>
