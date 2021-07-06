@@ -1,7 +1,8 @@
-export const API_Base_URL = 'https://api.yelp.com/v3';
+export const API_Base_URL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3';
 
 
 // Cors Proxy link: https://cors-anywhere.herokuapp.com/
+// https://cors-anywhere.herokuapp.com/corsdemo link to access the proxy
 // Fuck cors
 
 // Don't do this in production. Will need to make a server later for the key
