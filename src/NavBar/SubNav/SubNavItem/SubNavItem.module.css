@@ -12,3 +12,7 @@
 .right-border {
     border-right: 1px solid rgb(230,230,230);
 }
+
+@media (max-width: 600px) {
+    
+}

@@ -24,3 +24,6 @@
     margin-left: var(--element-spacing);
 }
 
+@media (max-width: 600px) {
+    
+}

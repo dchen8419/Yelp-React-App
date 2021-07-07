@@ -10,3 +10,7 @@
 :global(.icon).search-icon {
     color: white;
 }
+
+@media (max-width: 600px) {
+    
+}

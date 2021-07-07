@@ -19,3 +19,7 @@
 :global(.button).omit-right-border {
     border-right: none;
 }
+
+@media (max-width: 600px) {
+    
+}

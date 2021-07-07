@@ -14,3 +14,7 @@
 :global(.button).nav-button {
     margin-left: 1rem;
 }
+
+@media (max-width: 600px) {
+    
+}

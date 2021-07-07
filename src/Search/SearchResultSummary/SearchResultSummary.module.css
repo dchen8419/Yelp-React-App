@@ -30,6 +30,10 @@
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    
+}
+
 .filters > * {
     margin-right: .7rem;
 }
