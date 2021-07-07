@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {LandingPage} from './LandingPage/LandingPage';
 import {Route, Switch} from 'react-router-dom';
 import {Search} from './Search/Search';

@@ -6,11 +6,17 @@ export function SearchResultSummary (props) {
     if (props.amountResults && props.shownResults) {
         resultStats = <p> Showing 1-{props.shownResults} out of {props.amountResults} results</p>
     }
-    
+    let ratings = [];
+    for (let i = 1; i < 5; i +=1) {
+        ratings.push(
+            <button className='button'>{'$'.repeat(i)}</button>
+        )
+    }
+   
     return (
         <div className={styles.container}>
             <div className={styles['search-summary']}>
-                <h1 className='subtitle'><strong>{props.term}</strong>{props.location}</h1>
+                <h1 className='subtitle'><strong>{props.location}:  </strong>{props.term}</h1>
                 {resultStats}
             </div>
             <div className={styles.filters}>
@@ -21,10 +27,7 @@ export function SearchResultSummary (props) {
                     <span>All Filters</span>
                 </button>
                 <div className="buttons has-addons">
-                    <button className="button">$</button>
-                    <button className="button">$$</button>
-                    <button className="button">$$$</button>
-                    <button className="button">$$$$</button>
+                   {ratings}
                 </div>
                 <button className="button">
                     <span className="icon">
