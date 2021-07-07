@@ -6,6 +6,11 @@ import { SearchBar } from '../SearchBar/SearchBar'
 import {SearchSuggestions} from './SearchSuggestions/SearchSuggestions';
 import useReactRouter from 'use-react-router';
 
+
+
+
+
+
 export function LandingPage() {
 
     const {history} = useReactRouter()
